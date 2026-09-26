@@ -10,7 +10,7 @@ const TOOLS = [
 ];
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://minitoolbox.vercel.app"),
+  metadataBase: new URL("https://minitoolbox-ten.vercel.app"),
   title: {
     default: "MiniToolbox — Free Online Image & PDF Tools, No Uploads",
     template: "%s | MiniToolbox",

@@ -60,7 +60,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "MiniToolbox",
-    url: "https://minitoolbox.vercel.app",
+    url: "https://minitoolbox-ten.vercel.app",
     description:
       "Free browser-based image and PDF tools. Files are processed locally and never uploaded to a server.",
   };

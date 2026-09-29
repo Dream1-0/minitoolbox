@@ -3,9 +3,9 @@ import Link from "next/link";
 import MergePdfTool from "@/components/MergePdfTool";
 
 export const metadata: Metadata = {
-  title: "Merge PDF — Combine PDF Files Online Free, No Upload",
+  title: "Merge PDF — Combine PDF Files Online Free",
   description:
-    "Combine multiple PDF files into one document, right in your browser. Reorder files before merging. Free, unlimited and 100% private — files never leave your device.",
+    "Combine multiple PDF files into one document, right in your browser. Reorder files before merging. Free and 100% private — no uploads.",
   keywords: [
     "merge pdf online",
     "combine pdf files",

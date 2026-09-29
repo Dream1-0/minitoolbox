@@ -3,7 +3,7 @@ import Link from "next/link";
 import SplitPdfTool from "@/components/SplitPdfTool";
 
 export const metadata: Metadata = {
-  title: "Split PDF — Extract Pages or Split Every Page Online Free",
+  title: "Split PDF — Extract Pages or Split Every Page",
   description:
     "Split a PDF into single pages or extract a page range (e.g. 1-3, 5) into a new document. Runs entirely in your browser — free, instant and 100% private.",
   keywords: [

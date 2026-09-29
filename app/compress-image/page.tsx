@@ -3,9 +3,9 @@ import Link from "next/link";
 import CompressImageTool from "@/components/CompressImageTool";
 
 export const metadata: Metadata = {
-  title: "Compress Image to 100KB, 50KB or Any Size — Free, No Upload",
+  title: "Compress Image to 100KB, 50KB or Any Size",
   description:
-    "Compress JPG, PNG or WebP images to an exact target size (20KB, 50KB, 100KB and more) right in your browser. Perfect for exam forms, job applications and visa photos. Free, unlimited and 100% private.",
+    "Compress JPG, PNG or WebP images to an exact target size right in your browser. Free, unlimited and 100% private — files never leave your device.",
   keywords: [
     "compress image to 100kb",
     "compress jpeg to 50kb",

@@ -3,7 +3,7 @@ import Link from "next/link";
 import ConvertImageTool from "@/components/ConvertImageTool";
 
 export const metadata: Metadata = {
-  title: "Convert Image Format — PNG, JPG, WebP, BMP Online Free",
+  title: "Convert Image Format — PNG, JPG, WebP, BMP",
   description:
     "Convert images between PNG, JPG, WebP and BMP formats directly in your browser. No uploads, no watermarks, no sign-up. Free and 100% private.",
   keywords: [

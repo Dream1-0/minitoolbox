@@ -13,6 +13,21 @@ export const metadata: Metadata = {
     "image format converter",
     "heic to jpg free",
   ],
+  alternates: { canonical: "/convert-image" },
+  openGraph: {
+    title: "Convert Image Format — PNG, JPG, WebP, BMP",
+    description:
+      "Convert images between PNG, JPG, WebP and BMP formats directly in your browser. No uploads, no watermarks, no sign-up.",
+    url: "/convert-image",
+    siteName: "MiniToolbox",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Convert Image Format — PNG, JPG, WebP, BMP",
+    description:
+      "Convert between PNG, JPG, WebP and BMP right in your browser. No uploads, no watermarks.",
+  },
 };
 
 const faqs = [

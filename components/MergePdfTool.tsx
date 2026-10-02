@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { PDFDocument } from "pdf-lib";
 import Dropzone from "./Dropzone";
 import { downloadBlob, formatBytes } from "@/lib/format";
 
@@ -49,6 +48,7 @@ export default function MergePdfTool() {
     setBusy(true);
     setError(null);
     try {
+      const { PDFDocument } = await import("pdf-lib");
       const out = await PDFDocument.create();
       for (const it of items) {
         const src = await PDFDocument.load(await it.file.arrayBuffer(), {

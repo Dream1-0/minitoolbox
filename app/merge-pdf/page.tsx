@@ -12,6 +12,21 @@ export const metadata: Metadata = {
     "join pdf free",
     "pdf merger no upload",
   ],
+  alternates: { canonical: "/merge-pdf" },
+  openGraph: {
+    title: "Merge PDF — Combine PDF Files Online Free",
+    description:
+      "Combine multiple PDF files into one document, right in your browser. Reorder files before merging. Free and 100% private — no uploads.",
+    url: "/merge-pdf",
+    siteName: "MiniToolbox",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Merge PDF — Combine PDF Files Online Free",
+    description:
+      "Combine multiple PDF files into one, right in your browser. Free and 100% private.",
+  },
 };
 
 const faqs = [

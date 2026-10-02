@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { PDFDocument } from "pdf-lib";
 import Dropzone from "./Dropzone";
 import { downloadBlob, formatBytes } from "@/lib/format";
 
@@ -25,6 +24,7 @@ export default function SplitPdfTool() {
     setError(null);
     setRangeStr("");
     try {
+      const { PDFDocument } = await import("pdf-lib");
       const doc = await PDFDocument.load(await pdf.arrayBuffer(), {
         ignoreEncryption: true,
       });
@@ -68,6 +68,7 @@ export default function SplitPdfTool() {
     setError(null);
     setResults(null);
     try {
+      const { PDFDocument } = await import("pdf-lib");
       const src = await PDFDocument.load(await file.arrayBuffer(), {
         ignoreEncryption: true,
       });

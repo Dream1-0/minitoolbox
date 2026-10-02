@@ -27,6 +27,14 @@ export const metadata: Metadata = {
     "split pdf online",
     "free file tools",
   ],
+  icons: { icon: "/icon.svg" },
+  openGraph: {
+    type: "website",
+    siteName: "MiniToolbox",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 function Logo() {
@@ -81,6 +89,7 @@ export default function RootLayout({
                   {t.label}
                 </Link>
               ))}
+              <Link href="/privacy-policy">Privacy Policy</Link>
             </nav>
           </div>
         </footer>

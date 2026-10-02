@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/heic-to-jpg", priority: 0.9 },
     { path: "/merge-pdf", priority: 0.9 },
     { path: "/split-pdf", priority: 0.9 },
+    { path: "/privacy-policy", priority: 0.3 },
   ];
   return routes.map((r) => ({
     url: `${BASE}${r.path}`,

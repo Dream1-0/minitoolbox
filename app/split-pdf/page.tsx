@@ -12,6 +12,21 @@ export const metadata: Metadata = {
     "separate pdf pages",
     "pdf page remover free",
   ],
+  alternates: { canonical: "/split-pdf" },
+  openGraph: {
+    title: "Split PDF — Extract Pages or Split Every Page",
+    description:
+      "Split a PDF into single pages or extract a page range (e.g. 1-3, 5) into a new document. Runs entirely in your browser — free and 100% private.",
+    url: "/split-pdf",
+    siteName: "MiniToolbox",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Split PDF — Extract Pages or Split Every Page",
+    description:
+      "Extract page ranges or split every page into its own PDF, right in your browser. Free and 100% private.",
+  },
 };
 
 const faqs = [

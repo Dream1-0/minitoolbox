@@ -13,6 +13,21 @@ export const metadata: Metadata = {
     "reduce image size kb",
     "photo size compressor",
   ],
+  alternates: { canonical: "/compress-image" },
+  openGraph: {
+    title: "Compress Image to 100KB, 50KB or Any Size",
+    description:
+      "Compress JPG, PNG or WebP images to an exact target size right in your browser. Free, unlimited and 100% private.",
+    url: "/compress-image",
+    siteName: "MiniToolbox",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Compress Image to 100KB, 50KB or Any Size",
+    description:
+      "Compress JPG, PNG or WebP to an exact target size in your browser. Free and 100% private.",
+  },
 };
 
 const faqs = [

@@ -13,6 +13,21 @@ export const metadata: Metadata = {
     "open heic file on windows",
     "heic to png",
   ],
+  alternates: { canonical: "/heic-to-jpg" },
+  openGraph: {
+    title: "HEIC to JPG — Convert iPhone Photos Free",
+    description:
+      "Convert iPhone HEIC photos to JPG right in your browser. Free, batch-friendly and 100% private — your photos never leave your device.",
+    url: "/heic-to-jpg",
+    siteName: "MiniToolbox",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HEIC to JPG — Convert iPhone Photos Free",
+    description:
+      "Convert iPhone HEIC photos to JPG in your browser. Free, private, no uploads.",
+  },
 };
 
 const faqs = [

@@ -1,4 +1,23 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "MiniToolbox — Free Online Image & PDF Tools, No Uploads",
+    description:
+      "Compress images to an exact size, convert formats, merge and split PDFs — everything runs inside your browser.",
+    url: "/",
+    siteName: "MiniToolbox",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MiniToolbox — Free Online Image & PDF Tools, No Uploads",
+    description:
+      "Compress images to an exact size, convert formats, merge and split PDFs — everything runs inside your browser.",
+  },
+};
 
 const TOOLS = [
   {

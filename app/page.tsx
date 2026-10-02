@@ -57,6 +57,56 @@ const TOOLS = [
     ),
   },
   {
+    href: "/resize-image",
+    title: "Image Resizer",
+    desc: "Resize JPG, PNG or WebP by pixels or percentage. Batch-friendly, high quality — files never uploaded.",
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <polyline points="15 3 21 3 21 9" />
+        <polyline points="9 21 3 21 3 15" />
+        <line x1="21" y1="3" x2="14" y2="10" />
+        <line x1="3" y1="21" x2="10" y2="14" />
+      </svg>
+    ),
+  },
+  {
+    href: "/qr-code-generator",
+    title: "QR Code Generator",
+    desc: "Create QR codes for links, text or Wi-Fi. Download as PNG or print-ready SVG — free, no sign-up.",
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <rect x="3" y="3" width="7" height="7" rx="1" />
+        <rect x="14" y="3" width="7" height="7" rx="1" />
+        <rect x="3" y="14" width="7" height="7" rx="1" />
+        <path d="M14 14h3v3h-3z" />
+        <path d="M21 14v.01M14 21v.01M18 18v.01M21 21v.01" />
+      </svg>
+    ),
+  },
+  {
+    href: "/word-counter",
+    title: "Word Counter",
+    desc: "Count words, characters, sentences and paragraphs live — with reading and speaking time estimates.",
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M4 7V5h16v2" />
+        <path d="M12 5v14" />
+        <path d="M9 19h6" />
+      </svg>
+    ),
+  },
+  {
+    href: "/rotate-pdf",
+    title: "Rotate PDF",
+    desc: "Turn PDF pages 90°, 180° or 270° and save a permanent fix — all pages or just selected ones.",
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <polyline points="23 4 23 10 17 10" />
+        <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10" />
+      </svg>
+    ),
+  },
+  {
     href: "/merge-pdf",
     title: "Merge PDF",
     desc: "Combine multiple PDF files into one document. Drag, reorder and merge in seconds — files never uploaded.",

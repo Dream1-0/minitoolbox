@@ -110,6 +110,10 @@ export default function SplitPdfPage() {
             <Link href="/convert-image">Convert image format</Link> — PNG, JPG,
             WebP and BMP
           </li>
+          <li>
+            <Link href="/rotate-pdf">Rotate PDF</Link> — turn pages sideways
+            or upside down
+          </li>
         </ul>
 
         <h2>Frequently asked questions</h2>

@@ -5,8 +5,13 @@ import "./globals.css";
 const TOOLS = [
   { href: "/compress-image", label: "Compress Image" },
   { href: "/convert-image", label: "Convert Image" },
+  { href: "/resize-image", label: "Resize Image" },
+  { href: "/heic-to-jpg", label: "HEIC to JPG" },
+  { href: "/qr-code-generator", label: "QR Code" },
+  { href: "/word-counter", label: "Word Counter" },
   { href: "/merge-pdf", label: "Merge PDF" },
   { href: "/split-pdf", label: "Split PDF" },
+  { href: "/rotate-pdf", label: "Rotate PDF" },
 ];
 
 export const metadata: Metadata = {

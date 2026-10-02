@@ -120,6 +120,10 @@ export default function ConvertImagePage() {
             <Link href="/split-pdf">Split PDF</Link> — extract pages or split
             into single pages
           </li>
+          <li>
+            <Link href="/resize-image">Image Resizer</Link> — resize by pixels
+            or percentage
+          </li>
         </ul>
 
         <h2>Frequently asked questions</h2>

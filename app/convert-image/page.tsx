@@ -91,6 +91,10 @@ export default function ConvertImagePage() {
         <h2>More free tools</h2>
         <ul>
           <li>
+            <Link href="/heic-to-jpg">HEIC to JPG</Link> — convert iPhone
+            photos to a universal format
+          </li>
+          <li>
             <Link href="/compress-image">Compress image to target size</Link> —
             hit exact KB requirements
           </li>

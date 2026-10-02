@@ -26,6 +26,18 @@ const TOOLS = [
     ),
   },
   {
+    href: "/heic-to-jpg",
+    title: "HEIC to JPG",
+    desc: "Convert iPhone HEIC photos to universal JPG or PNG. Fixes “can't open HEIC” on Windows in seconds.",
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <rect x="3" y="3" width="18" height="18" rx="2" />
+        <circle cx="8.5" cy="8.5" r="1.5" />
+        <path d="M21 15l-5-5L5 21" />
+      </svg>
+    ),
+  },
+  {
     href: "/merge-pdf",
     title: "Merge PDF",
     desc: "Combine multiple PDF files into one document. Drag, reorder and merge in seconds — files never uploaded.",

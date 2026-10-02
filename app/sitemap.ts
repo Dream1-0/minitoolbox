@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "", priority: 1 },
     { path: "/compress-image", priority: 0.9 },
     { path: "/convert-image", priority: 0.9 },
+    { path: "/heic-to-jpg", priority: 0.9 },
     { path: "/merge-pdf", priority: 0.9 },
     { path: "/split-pdf", priority: 0.9 },
   ];

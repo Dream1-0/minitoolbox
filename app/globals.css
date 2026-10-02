@@ -675,6 +675,44 @@ a:hover {
   height: auto;
 }
 
+/* ---------- Ads / Pro ---------- */
+
+.ad-slot {
+  max-width: 1080px;
+  margin: 36px auto 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.ad-slot .ad-label {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.pro-key-input {
+  width: 100%;
+  max-width: 340px;
+  display: block;
+  margin-top: 10px;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.pro-active-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+
 @media (max-width: 640px) {
   .hero {
     padding: 40px 0 28px;

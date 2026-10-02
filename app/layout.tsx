@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AdSlot from "@/components/AdSlot";
 import "./globals.css";
+
+// Set NEXT_PUBLIC_ADSENSE_CLIENT (ca-pub-…) and NEXT_PUBLIC_ADSENSE_SLOT in
+// the Vercel environment once the AdSense account is approved. Without them
+// no ad script or slot is rendered at all.
+const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
 
 const TOOLS = [
   { href: "/compress-image", label: "Compress Image" },
@@ -33,6 +39,9 @@ export const metadata: Metadata = {
     "free file tools",
   ],
   icons: { icon: "/icon.svg" },
+  other: ADSENSE_CLIENT
+    ? { "google-adsense-account": ADSENSE_CLIENT }
+    : undefined,
   openGraph: {
     type: "website",
     siteName: "MiniToolbox",
@@ -82,6 +91,7 @@ export default function RootLayout({
           </div>
         </header>
         <main>{children}</main>
+        <AdSlot />
         <footer className="site-footer">
           <div className="container footer-inner">
             <span>
@@ -95,6 +105,7 @@ export default function RootLayout({
                 </Link>
               ))}
               <Link href="/privacy-policy">Privacy Policy</Link>
+              <Link href="/pro">Go Pro</Link>
             </nav>
           </div>
         </footer>

@@ -26,7 +26,7 @@ export default function PrivacyPolicyPage() {
   return (
     <div className="container prose">
       <h1>Privacy Policy</h1>
-      <p className="section-sub">Last updated: October 2, 2026</p>
+      <p className="section-sub">Last updated: October 3, 2026</p>
 
       <h2>Overview</h2>
       <p>
@@ -69,12 +69,26 @@ export default function PrivacyPolicyPage() {
         is not used by us to identify you.
       </p>
 
-      <h2>Cookies and local storage</h2>
+      <h2>Ads and cookies</h2>
       <p>
-        The site does not use advertising or analytics cookies today. If we
-        later add analytics or advertising (for example, Google AdSense), this
-        policy will be updated before that happens, and any such usage will
-        comply with applicable consent requirements.
+        The site is free and supported by advertising. We use Google AdSense to
+        show ads. Google and its partners may use cookies or device identifiers
+        to serve and measure ads, and personalized advertising is only shown
+        where consent is required. You can read how Google uses data at{" "}
+        <a
+          href="https://policies.google.com/technologies/partner-sites"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          policies.google.com/technologies/partner-sites
+        </a>{" "}
+        and opt out of personalized advertising in your Google Ads Settings.
+      </p>
+      <p>
+        If you activate MiniToolbox Pro with a license key, ads are hidden. The
+        key is stored in your browser&apos;s local storage and validated
+        locally — activating Pro creates no account, no profile and no
+        server-side record about you.
       </p>
 
       <h2>Third-party links</h2>

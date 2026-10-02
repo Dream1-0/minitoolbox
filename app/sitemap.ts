@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/word-counter", priority: 0.9 },
     { path: "/rotate-pdf", priority: 0.9 },
     { path: "/privacy-policy", priority: 0.3 },
+    { path: "/pro", priority: 0.5 },
   ];
   return routes.map((r) => ({
     url: `${BASE}${r.path}`,

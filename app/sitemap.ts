@@ -14,6 +14,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/qr-code-generator", priority: 0.9 },
     { path: "/word-counter", priority: 0.9 },
     { path: "/rotate-pdf", priority: 0.9 },
+    { path: "/guides", priority: 0.8 },
+    { path: "/guides/compress-image-for-online-forms", priority: 0.7 },
+    { path: "/guides/heic-vs-jpg", priority: 0.7 },
+    { path: "/guides/merge-pdf-without-uploading", priority: 0.7 },
+    { path: "/about", priority: 0.4 },
+    { path: "/contact", priority: 0.3 },
     { path: "/privacy-policy", priority: 0.3 },
     { path: "/pro", priority: 0.5 },
   ];

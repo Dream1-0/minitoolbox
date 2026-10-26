@@ -51,6 +51,14 @@ const faqs = [
     q: "How do I stop my iPhone from taking HEIC photos?",
     a: "On your iPhone go to Settings → Camera → Formats and choose “Most Compatible”. New photos will then be saved as JPG.",
   },
+  {
+    q: "Does conversion keep HDR and wide-colour information?",
+    a: "The browser decodes and re-encodes the image as a standard 8-bit image, so extreme HDR highlights may be flattened. For everyday sharing, email and printing, the result looks the same as the original photo.",
+  },
+  {
+    q: "Is there a file size or batch limit?",
+    a: "No fixed limit. Everything is decoded on your device, so very large batches depend on your available memory. If a large batch slows down, convert it in smaller groups.",
+  },
 ];
 
 export default function HeicToJpgPage() {
@@ -103,7 +111,85 @@ export default function HeicToJpgPage() {
           every device and uploads to every form, email and social network.
         </p>
 
+        <h2>HEIC vs JPG: the practical differences</h2>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>HEIC</th>
+              <th>JPG</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>File size</td>
+              <td>About half of JPG</td>
+              <td>Larger</td>
+            </tr>
+            <tr>
+              <td>Compatibility</td>
+              <td>Apple devices; limited elsewhere</td>
+              <td>Opens almost everywhere</td>
+            </tr>
+            <tr>
+              <td>Quality at same size</td>
+              <td>Better</td>
+              <td>Good</td>
+            </tr>
+            <tr>
+              <td>Transparency</td>
+              <td>Supported by the format</td>
+              <td>Not supported</td>
+            </tr>
+            <tr>
+              <td>Typical use</td>
+              <td>iPhone storage and iCloud</td>
+              <td>Sharing, uploads, printing</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Why Windows and Android struggle with HEIC</h2>
+        <p>
+          HEIC is built on the HEVC video codec, which carries patent licensing
+          costs. That is the main reason it never became a default image format
+          on Windows or Android. Windows 10 and 11 can install a HEIF Image
+          Extensions package from the Microsoft Store, and some Android phones
+          support HEIF, but support is inconsistent and many apps, websites and
+          email clients still refuse the files.
+        </p>
+        <p>
+          That is why the simplest fix is conversion rather than installing
+          extra software on every device that needs to open the photo.
+        </p>
+
+        <h2>JPG or PNG output?</h2>
+        <p>
+          Choose JPG for photos you will share, email or upload. At the default
+          quality the result is visually identical to the original and the file
+          stays reasonably small. Choose PNG when you need a mathematically
+          lossless copy — for editing, archiving or when the image has to be
+          re-saved several times. PNG files are much larger, so it is a poor
+          choice for sending a whole album.
+        </p>
+
+        <h2>Live Photos, bursts and edited photos</h2>
+        <p>
+          A Live Photo is actually two files: a HEIC still image and a short MOV
+          video. This tool converts the still image only; the motion part stays
+          behind. Burst photos arrive as separate HEIC files and convert
+          normally. Photos edited on the iPhone keep their edits when the
+          exported file includes the rendered image, which is what the camera
+          roll normally provides.
+        </p>
+
         <h2>More free tools</h2>
+        <p>
+          For a deeper comparison of the formats, read{" "}
+          <Link href="/guides/heic-vs-jpg">
+            HEIC vs JPG: which format should you use?
+          </Link>
+        </p>
         <ul>
           <li>
             <Link href="/compress-image">Compress image to target size</Link> —

@@ -47,6 +47,14 @@ const faqs = [
     q: "What if my image is already smaller than the target?",
     a: "If the image cannot reach the target size (for example a very small image), we keep the closest possible result and mark it in the file list.",
   },
+  {
+    q: "Does compressing remove metadata such as GPS location?",
+    a: "Re-encoding an image normally drops extra metadata like camera details and location tags. Your original file is never modified, so you can keep it as a backup. For photos shared publicly, that is often a privacy advantage.",
+  },
+  {
+    q: "Which file types can I compress?",
+    a: "JPG, PNG, WebP, BMP and GIF images are supported. PNG, BMP and GIF are saved as JPG to achieve the smallest size, while JPG and WebP keep their original format.",
+  },
 ];
 
 export default function CompressImagePage() {
@@ -106,7 +114,89 @@ export default function CompressImagePage() {
           photos, passports and confidential documents.
         </p>
 
+        <h2>What “under 100KB” actually means</h2>
+        <p>
+          When a form says “photo must be under 100KB”, it is talking about the
+          file size on disk, not the image dimensions. Portals differ on
+          whether they count 1KB as 1,000 or 1,024 bytes, so this tool targets
+          the stricter 1,024-byte definition. A file that passes here will pass
+          either rule.
+        </p>
+        <p>
+          File size and pixel size are separate things: a 4000×3000 photo can
+          end up at 40KB after aggressive compression, while a 600×600
+          screenshot can be 300KB as PNG. If the requirements also mention
+          dimensions, resize first with the{" "}
+          <Link href="/resize-image">Image Resizer</Link>, then compress the
+          result.
+        </p>
+
+        <h2>Common size requirements</h2>
+        <ul>
+          <li>
+            <strong>Signatures:</strong> 10–20KB, usually JPG only.
+          </li>
+          <li>
+            <strong>Passport and visa photos:</strong> 20–100KB, often with a
+            fixed pixel size as well.
+          </li>
+          <li>
+            <strong>Exam and job application photos:</strong> 50KB, 100KB or
+            200KB.
+          </li>
+          <li>
+            <strong>Website images:</strong> 100–300KB for large photos, 20–60KB
+            for thumbnails.
+          </li>
+        </ul>
+        <p>
+          Always read the portal&apos;s exact wording. Many government forms
+          specify both a maximum file size and a pixel size, and a file can
+          pass one rule while failing the other.
+        </p>
+
+        <h2>What compression gives up</h2>
+        <p>
+          JPG compression discards fine detail the eye is unlikely to notice at
+          normal viewing sizes. At 70–90% quality, photos look virtually
+          identical to the original. Below roughly 50%, you start to see
+          blocking around high-contrast edges, ringing around text, and banding
+          in smooth gradients such as skies.
+        </p>
+        <p>
+          Text-heavy images such as screenshots, scanned forms and diagrams
+          suffer more, because JPG is designed for photographs rather than
+          sharp black-on-white edges. If the portal accepts PNG and the file is
+          already under the limit, keep PNG. If it only accepts JPG, compress at
+          the highest quality that still fits.
+        </p>
+
+        <h2>When the target cannot be reached</h2>
+        <ul>
+          <li>
+            An image that is already smaller than the target is returned as
+            close as possible and marked in the results list.
+          </li>
+          <li>
+            Extremely detailed images sometimes need a lower-resolution output.
+            If a result is still above the target, resize it first and run the
+            compression again.
+          </li>
+          <li>
+            Transparent PNGs are flattened onto a white background when saved
+            as JPG, because JPG has no transparency channel.
+          </li>
+        </ul>
+
         <h2>More free tools</h2>
+        <p>
+          Planning to upload to a government portal or job site? The guide{" "}
+          <Link href="/guides/compress-image-for-online-forms">
+            Compressing a photo for online forms
+          </Link>{" "}
+          walks through typical size limits and the order to resize and
+          compress.
+        </p>
         <ul>
           <li>
             <Link href="/convert-image">Convert image format</Link> — PNG, JPG,

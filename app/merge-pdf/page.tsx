@@ -46,6 +46,14 @@ const faqs = [
     q: "Will the quality of my PDF change?",
     a: "No. Pages are copied 1:1 into the new document with their original quality, fonts and layout intact.",
   },
+  {
+    q: "Can I merge password-protected PDFs?",
+    a: "PDFs that require a password to open cannot be read, so they cannot be merged. Files that are only restricted from editing but open freely usually merge without problems.",
+  },
+  {
+    q: "Can I merge files with different page sizes?",
+    a: "Yes. Each page keeps its own size and orientation, so an A4 contract and a letter-size appendix can live in the same PDF. Printing may add margins where sizes differ.",
+  },
 ];
 
 export default function MergePdfPage() {
@@ -96,7 +104,64 @@ export default function MergePdfPage() {
           own device — your files never leave your hands.
         </p>
 
+        <h2>What merging keeps — and what it may not</h2>
+        <p>
+          Page content is copied one to one: text, images, vector artwork,
+          embedded fonts and the original page size all survive. What may not
+          survive are document-level extras that belong to the file rather than
+          to a single page — bookmarks and outlines, fillable form fields,
+          annotations added in a reader, and digital signatures. A signature, in
+          particular, is tied to the exact bytes of the original document, so
+          expect it to become invalid once pages are combined.
+        </p>
+
+        <h2>Ordering files and pages</h2>
+        <p>
+          Files are appended in the order shown in the list, from top to bottom.
+          Use the up and down buttons to move a file before merging. If you need
+          pages interleaved — for example page 1 of one contract, then page 1 of
+          another — extract the pages you need with the{" "}
+          <Link href="/split-pdf">Split PDF</Link> tool first, then merge the
+          extracts in the order you want.
+        </p>
+
+        <h2>Scanned documents and file size</h2>
+        <p>
+          Merging does not re-compress anything, so the combined file is roughly
+          the sum of its parts. A stack of scanned PDFs can therefore become
+          large. If email limits are a problem, merge first and then reduce the
+          result with a PDF compressor, or check whether the scanner can save at
+          a lower resolution next time.
+        </p>
+
+        <h2>Everyday uses</h2>
+        <ul>
+          <li>
+            <strong>Job applications:</strong> combine a cover letter, CV,
+            certificates and references into one upload.
+          </li>
+          <li>
+            <strong>Contracts:</strong> attach appendices, schedules and signed
+            signature pages to the main agreement.
+          </li>
+          <li>
+            <strong>Invoices and statements:</strong> merge monthly files into a
+            single document for accounting.
+          </li>
+          <li>
+            <strong>Coursework:</strong> join assignment parts, scanned notes
+            and a bibliography into one submission file.
+          </li>
+        </ul>
+
         <h2>More free tools</h2>
+        <p>
+          Merging documents that contain sensitive information? Read{" "}
+          <Link href="/guides/merge-pdf-without-uploading">
+            how to merge PDFs without uploading them
+          </Link>{" "}
+          before you start.
+        </p>
         <ul>
           <li>
             <Link href="/split-pdf">Split PDF</Link> — extract pages or split

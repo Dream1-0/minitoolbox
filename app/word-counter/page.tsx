@@ -52,6 +52,10 @@ const faqs = [
     q: "Can I check an essay with a 500-word limit?",
     a: "Yes — paste the essay and the word count updates instantly as you edit, so you can trim or expand until you hit the limit. It also works offline once the page has loaded.",
   },
+  {
+    q: "How are hyphenated words and numbers counted?",
+    a: "Counting is based on whitespace, so “state-of-the-art” is one word and “2026” is one word. Numbers are counted as words, which matches how most word processors report a count.",
+  },
 ];
 
 export default function WordCounterPage() {
@@ -120,6 +124,76 @@ export default function WordCounterPage() {
           quoting per-word prices, and speakers timing a script. Because the
           text never leaves your browser, it is safe even for confidential
           drafts.
+        </p>
+
+        <h2>How each number is calculated</h2>
+        <ul>
+          <li>
+            <strong>Words:</strong> the text is split on whitespace — spaces,
+            tabs and line breaks — and every non-empty piece counts as one
+            word.
+          </li>
+          <li>
+            <strong>Characters:</strong> the raw length of the text. The
+            without-spaces figure removes spaces and line breaks, which is the
+            number most character limits refer to.
+          </li>
+          <li>
+            <strong>Sentences:</strong> counted by splitting on full stops,
+            exclamation marks and question marks.
+          </li>
+          <li>
+            <strong>Paragraphs:</strong> blocks separated by a blank line, the
+            same convention word processors use.
+          </li>
+        </ul>
+
+        <h2>Word limits worth remembering</h2>
+        <ul>
+          <li>
+            <strong>Common App essay:</strong> 650 words maximum.
+          </li>
+          <li>
+            <strong>University of California PIQ:</strong> 350 words per
+            response.
+          </li>
+          <li>
+            <strong>IELTS Writing:</strong> 150 words for Task 1 and 250 for
+            Task 2, as minimums.
+          </li>
+          <li>
+            <strong>Conference abstracts:</strong> commonly 150–250 words, so
+            check the call for papers.
+          </li>
+          <li>
+            <strong>Meta descriptions:</strong> about 155–160 characters before
+            search results truncate them.
+          </li>
+        </ul>
+        <p>
+          Limits are often strict rather than advisory: application systems can
+          reject an over-length essay outright, and examiners may ignore
+          everything beyond the word limit. Paste the draft here and watch the
+          count as you cut.
+        </p>
+
+        <h2>Reading time vs speaking time</h2>
+        <p>
+          Reading time assumes 200 words per minute, a comfortable silent
+          reading pace. Speaking time assumes 130 words per minute, which fits a
+          steady presentation or a clear voice-over. Real speeches run slower
+          once you add pauses, emphasis and audience reactions, so treat the
+          speaking figure as a minimum and rehearse with a timer for anything
+          important.
+        </p>
+
+        <h2>Why local counting matters</h2>
+        <p>
+          Confidential drafts, unpublished manuscripts and internal documents
+          should not be pasted into a random website. Here the counting happens
+          in the browser: no text is transmitted, logged or stored, and closing
+          the tab removes it. That makes it safe for work that is not ready to
+          be shared.
         </p>
 
         <h2>More free tools</h2>

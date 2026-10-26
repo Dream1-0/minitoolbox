@@ -52,6 +52,10 @@ const faqs = [
     q: "My PDF is password-protected — will it work?",
     a: "PDFs that need a password to open cannot be rotated. Files that are only restricted from editing (but open freely) usually work, because the tool reads and rewrites the pages.",
   },
+  {
+    q: "Does rotating change the file size or quality?",
+    a: "No. The tool changes each page's rotation setting without re-rendering text or images, so quality stays identical and the file size changes only marginally.",
+  },
 ];
 
 export default function RotatePdfPage() {
@@ -105,6 +109,44 @@ export default function RotatePdfPage() {
           If you only need a few pages out of a big document, extract them
           first with the <Link href="/split-pdf">Split PDF</Link> tool, rotate
           the extract, and keep the original untouched.
+        </p>
+
+        <h2>What “saving” the rotation means</h2>
+        <p>
+          A PDF page has a rotation value stored in the file itself. This tool
+          changes that value and writes a new file, which is why the fix is
+          permanent: standard PDF readers, phone viewers and print dialogs all
+          honour it. The tool does not rotate the picture inside the page or
+          re-render it, so text stays sharp and images keep their original
+          resolution.
+        </p>
+
+        <h2>Mixed orientations in one document</h2>
+        <p>
+          Combined documents often contain both portrait and landscape pages.
+          Use the pages field to rotate only the pages that are wrong — for
+          example <code>2, 5-7</code> — instead of turning the whole file. Since
+          the rotation is written per page, you can run the tool again with a
+          different selection if some pages still look wrong.
+        </p>
+
+        <h2>Rotate before merging</h2>
+        <p>
+          If you are assembling a document from several sources, fix the
+          orientation first and merge afterwards. Merging copies each page with
+          its current rotation setting, so pages rotated beforehand stay
+          correct in the combined file. Doing it the other way round means
+          rotating pages inside a much larger document, which is harder to
+          check.
+        </p>
+
+        <h2>Why a rotated page can still look wrong</h2>
+        <p>
+          Some viewers cache the previous rendering, and a few mobile apps
+          ignore the page rotation value. If the rotated file still appears
+          sideways, close and reopen it, or check in a different reader such as
+          your browser&apos;s built-in PDF viewer. Print preview is usually the
+          best test of what will actually come out of a printer.
         </p>
 
         <h2>More free tools</h2>

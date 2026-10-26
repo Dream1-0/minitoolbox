@@ -104,6 +104,9 @@ export default function RootLayout({
                   {t.label}
                 </Link>
               ))}
+              <Link href="/guides">Guides</Link>
+              <Link href="/about">About</Link>
+              <Link href="/contact">Contact</Link>
               <Link href="/privacy-policy">Privacy Policy</Link>
               <Link href="/pro">Go Pro</Link>
             </nav>

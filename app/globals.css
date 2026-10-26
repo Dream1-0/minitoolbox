@@ -609,6 +609,27 @@ a:hover {
   font-size: 13.5px;
 }
 
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+  font-size: 14px;
+}
+
+.prose th,
+.prose td {
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.prose th {
+  color: var(--text);
+  background: var(--surface-2);
+  font-weight: 600;
+}
+
 /* ---------- Text / QR tools ---------- */
 
 .textarea {

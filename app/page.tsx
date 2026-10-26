@@ -252,6 +252,46 @@ export default function Home() {
           </p>
         </details>
       </section>
+
+      <section className="container section">
+        <h2>Guides &amp; how-tos</h2>
+        <p className="section-sub">
+          Practical explanations for the file problems people actually run
+          into.
+        </p>
+        <div className="grid-tools">
+          <Link
+            href="/guides/compress-image-for-online-forms"
+            className="tool-card"
+          >
+            <h3>Compress a photo for online forms</h3>
+            <p>
+              How to meet 20KB, 50KB or 100KB limits — and why a file can pass
+              the size rule and still be rejected.
+            </p>
+          </Link>
+          <Link href="/guides/heic-vs-jpg" className="tool-card">
+            <h3>HEIC vs JPG</h3>
+            <p>
+              The real differences between iPhone photos and the universal
+              format, and when converting is worth it.
+            </p>
+          </Link>
+          <Link
+            href="/guides/merge-pdf-without-uploading"
+            className="tool-card"
+          >
+            <h3>Merge PDFs without uploading</h3>
+            <p>
+              What happens to your documents on an online merger, and how to
+              combine PDFs on your own device.
+            </p>
+          </Link>
+        </div>
+        <p>
+          <Link href="/guides">Browse all guides →</Link>
+        </p>
+      </section>
     </>
   );
 }

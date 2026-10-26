@@ -47,6 +47,14 @@ const faqs = [
     q: "Are my images uploaded anywhere?",
     a: "No. Conversion runs entirely in your browser — your files never leave your device.",
   },
+  {
+    q: "Can I convert HEIC photos with this tool?",
+    a: "Use the dedicated HEIC to JPG tool instead. Most browsers cannot decode iPhone HEIC files directly, so that page loads a HEIC decoder and handles the conversion for you.",
+  },
+  {
+    q: "Does converting change the image dimensions?",
+    a: "No. Conversion only changes the encoding — the pixel width and height stay the same. To change dimensions, use the Image Resizer.",
+  },
 ];
 
 export default function ConvertImagePage() {
@@ -100,6 +108,95 @@ export default function ConvertImagePage() {
           <li>
             <strong>WebP</strong> — modern format, much smaller than JPG/PNG at
             similar quality. Great for websites and saving disk space.
+          </li>
+        </ul>
+
+        <h2>PNG, JPG, WebP and BMP compared</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Format</th>
+              <th>Transparency</th>
+              <th>Compression</th>
+              <th>Best for</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>JPG</td>
+              <td>No</td>
+              <td>Lossy</td>
+              <td>Photos, email attachments, uploads</td>
+            </tr>
+            <tr>
+              <td>PNG</td>
+              <td>Yes</td>
+              <td>Lossless</td>
+              <td>Logos, screenshots, sharp graphics</td>
+            </tr>
+            <tr>
+              <td>WebP</td>
+              <td>Yes</td>
+              <td>Lossy or lossless</td>
+              <td>Websites, smaller files at similar quality</td>
+            </tr>
+            <tr>
+              <td>BMP</td>
+              <td>Yes</td>
+              <td>Uncompressed</td>
+              <td>Legacy software; rarely the right choice</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Choosing a quality level</h2>
+        <p>
+          For JPG, 85–92% is the sweet spot for photographs: the file is much
+          smaller than the original and the difference is hard to see on a
+          screen. Drop to around 75–80% when a portal enforces a size limit,
+          and stay above 90% only for archival copies where every detail
+          matters.
+        </p>
+        <p>
+          WebP behaves similarly and usually produces an even smaller file at
+          the same setting. For logos and screenshots where crisp edges matter,
+          PNG or lossless WebP avoids the fuzzy artifacts that lossy formats
+          introduce around text.
+        </p>
+
+        <h2>Transparency and backgrounds</h2>
+        <p>
+          JPG cannot store transparency, so transparent areas in a PNG or WebP
+          are filled with white when converting to JPG. That is fine for
+          photographs, but a logo with a transparent background will suddenly
+          sit on a white box — choose PNG or WebP for anything that needs to
+          blend into a coloured page, slide or app screen.
+        </p>
+
+        <h2>Screenshots, logos and photos</h2>
+        <p>
+          Screenshots and UI captures are dominated by flat colours and text.
+          Lossless formats keep them razor-sharp, but the files can be large.
+          If you need a smaller screenshot for a chat or email, JPG at 90% is
+          usually acceptable; for a design handoff or a website asset, keep PNG.
+        </p>
+        <p>
+          Photographs are the opposite case: they contain smooth gradients and
+          fine noise, which JPG compresses efficiently. Converting a photo from
+          PNG to JPG can shrink it five- or ten-fold with no visible change at
+          normal viewing sizes.
+        </p>
+
+        <h2>What conversion cannot do</h2>
+        <ul>
+          <li>It cannot restore detail lost in an earlier compression pass.</li>
+          <li>
+            Converting a JPG to PNG does not improve quality; it usually makes
+            the file much larger.
+          </li>
+          <li>
+            It cannot add transparency to a photo that was saved with a solid
+            background.
           </li>
         </ul>
 

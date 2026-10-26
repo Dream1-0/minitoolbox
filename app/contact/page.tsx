@@ -31,20 +31,27 @@ export default function ContactPage() {
 
       <h2>How to reach us</h2>
       <p>
-        The fastest and most reliable channel is the{" "}
+        Email{" "}
+        <a href="mailto:3241366883@qq.com">3241366883@qq.com</a> for general
+        questions, privacy requests, Pro license problems and press enquiries.
+        Messages are read in the order they arrive; a reply usually follows
+        within a few days.
+      </p>
+      <p>
+        For reproducible bugs and feature requests, the public{" "}
         <a
           href="https://github.com/Dream1-0/minitoolbox/issues"
           target="_blank"
           rel="noopener noreferrer"
         >
           issue tracker on GitHub
-        </a>
-        . Open a new issue and describe what happened — public issues also help
-        other visitors with the same problem find the answer.
+        </a>{" "}
+        is the fastest route — public issues also help other visitors with the
+        same problem find the answer.
       </p>
       <p>
         If you are reporting a security or privacy problem, please say so in the
-        issue title so it can be looked at first.
+        subject line so it can be looked at first.
       </p>
 
       <h2>What to include in a bug report</h2>

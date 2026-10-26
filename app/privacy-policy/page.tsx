@@ -113,7 +113,9 @@ export default function PrivacyPolicyPage() {
 
       <h2>Contact</h2>
       <p>
-        Questions about this policy? You can reach us through the{" "}
+        Questions about this policy? Email{" "}
+        <a href="mailto:3241366883@qq.com">3241366883@qq.com</a> or open an issue
+        in the{" "}
         <a
           href="https://github.com/Dream1-0/minitoolbox"
           target="_blank"
